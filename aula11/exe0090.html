@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulado</title>
+</head>
+<body>
+    <h1>Consulado Nacional</h1>
+    <p>Nome: <input type="text" name="tNome" id="tnome" placeholder="Primeiro nome"></p>
+    <p>Nacionalidade: <input type="text" name="tNac" id="tnac" placeholder="País de nascimento"></p>
+    <input type="button" value="Verificar" onclick="avaliar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function avaliar() {
+            var n1 = window.document.querySelector('input#tnome')
+            var nac = window.document.querySelector('input#tnac')
+        var res = window.document.querySelector('div#res')
+       
+        if (nac=="Brasil") {
+            res.innerHTML = n1 + `é cidadão  brasileiro.`
+        } else {
+            res.innerHTML = n1 + `é cidadão estrangeiro.`
+        }
+        }
+    </script>
+</body>
+</html>
