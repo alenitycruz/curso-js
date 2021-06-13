@@ -17,9 +17,22 @@ function verificar() {
                 //Criança
             }else if (idade < 21) {
                 //Jovem
+            } else if (idade < 50) {
+                //Adulto
+            } else {
+                //Idoso
             }
         } else {
             genero = 'Mulher'
+            if(idade >=0 && idade < 10) {
+                //Criança
+            }else if (idade < 21) {
+                //Jovem
+            } else if (idade < 50) {
+                //Adulto
+            } else {
+                //Idoso
+            }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
